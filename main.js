@@ -9,6 +9,9 @@ form.addEventListener('submit', function(e){
     if(inputNumeroInfo.value.toString().length >= 12){
         alert(`Insira Um Número Válido`);
         return;
+    } else if(inputNumeroInfo.value.toString().length <= 7){
+        alert(`Insira Um Número Válido`);
+        return;
     }
     
     let linha = '<tr>';
