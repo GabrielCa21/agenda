@@ -15,9 +15,9 @@ form.addEventListener('submit', function(e){
     linha += `<td>${inputNomeInfo.value}</td>`;
     linha += `<td>${inputNumeroInfo.value}</td>`;
     const tamanhoNumero = inputNumeroInfo.value.toString().length;
-    if (tamanhoNumero <= 10) {
+    if (tamanhoNumero === 8 || tamanhoNumero === 10) {
         linha += '<td><img src="/images/telefone.png" alt="telefone"></td>';
-    } else {
+    } else if (tamanhoNumero === 9 || tamanhoNumero === 11) {
         linha += '<td><img src="/images/celular.png" alt="celular"></td>';
     }
     linha += '</tr>';
